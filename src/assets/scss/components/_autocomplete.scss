@@ -1,0 +1,54 @@
+.autoCompleteBox {
+  width: 525px;
+}
+.autoCompleteWrapper {
+  .ng-autocomplete {
+    margin: 0;
+    width: 100%;
+    .autocomplete-container {
+      box-shadow: initial;
+    }
+  }
+  .autocomplete-container {
+    .suggestions-container ul li a {
+        text-align: left;
+        border-bottom: 1px solid $gray-100;
+        .col-10 {
+            align-self: center;
+        }
+    }
+    .input-container {
+      position: relative;
+      &:after {
+        content: $icon-search;
+        font-family: "#{$icomoon-font-family}" !important;
+        left: 19px;
+        top: 13px;
+        font-size: 20px;
+        position: absolute;
+        color: $primary;
+      }
+      input {
+        font-size: $font-size-md;;
+        line-height: 56px;
+        height: 56px;
+        border-radius: 4px 0px 0 4px;
+        padding-left: 56px;
+        padding-right: 30px;
+        font-weight: 500;
+        border-color: transparent;
+        color: #161616;
+      }
+    }
+  }
+  .x {
+    .material-icons {
+      font-size: 0 !important;
+      &:before {
+        content: $icon-error;
+        font-family: "#{$icomoon-font-family}" !important;
+        font-size: 18px;
+      }
+    }
+  }
+}

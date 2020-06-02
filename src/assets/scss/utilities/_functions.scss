@@ -1,0 +1,39 @@
+/// Asset URL builder
+/// @access private
+/// @param {String} $type - Asset type, matching folder name
+/// @param {String} $file - Asset file name, including extension
+/// @return {URL} - A `url()` function leading to the asset
+
+
+$theme-colors: ( // Bootstrap color theme function
+  "primary": #51A0EC
+);
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1366px
+);
+@function asset($type, $file) { // Asset's path builder
+  @return url($asset-base-path+"/"+$type+"/"+$file);
+}
+
+/// Image asset helper
+/// @access public
+/// @param {String} $file - Asset file name, including extension
+/// @return {URL} - A `url()` function leading to the image
+/// @require {function} asset
+@function image($file) { // Image's path builder
+  @return asset("images", $file);
+}
+
+/// Font asset helper
+/// @access public
+/// @param {String} $file - Asset file name, including extension
+/// @return {URL} - A `url()` function leading to the font
+/// @require {function} asset
+@function font($file) { // Font's path builder
+  @return asset("fonts", $file);
+}

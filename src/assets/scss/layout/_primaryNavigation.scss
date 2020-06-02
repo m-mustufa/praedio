@@ -1,0 +1,52 @@
+.primaryNavigation {
+  padding: 2rem 3rem 0.5rem;
+  z-index: 1;
+  .navbar-brand {
+    margin-right: 50px;
+  }
+  .navbar-nav {
+    .nav-item {
+      margin-right: 48px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &.active,
+      &:hover {
+        .nav-link {
+          color: white;
+          &::before {
+            opacity: 1;
+            width: 100%;
+          }
+        }
+      }
+    }
+    .nav-link {
+      font-weight: 500;
+      font-size: $font-size-md;;
+      color: white;
+      position: relative;
+      &::before {
+        @include position(absolute, null, $left: 0, $bottom: 0);
+        content: "";
+        @include box(1px, 2px);
+        opacity: 0;
+        @include transition();
+        background-color: #fff;
+      }
+    }
+  }
+  .accountBtn {
+    @include box(214px, 56px);
+    line-height: 2.4;
+    &.active,
+    &:hover {
+      .nav-link {
+        color: inherit;
+        &::before {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

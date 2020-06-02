@@ -1,0 +1,11 @@
+.verticalSpacer {
+  @include prefix(transform, translateY(60px));
+}
+.mainContent {
+  padding: 80px 0;
+  .mainWrapper {
+    height: 100%;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+  }
+}

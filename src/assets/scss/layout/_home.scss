@@ -1,0 +1,62 @@
+.backgroundImg {
+  @include position(absolute, $top: 0, $left: 0, $right: 0, $bottom: 0);
+  @include box(100%, 100vh);
+  margin: auto;
+  background: image("/background.jpg") no-repeat 0 0 / cover;
+  background-attachment: fixed;
+}
+.propertySearchWrapper {
+  height: calc(100vh - 120px);
+  .searchWrapper {
+    padding-top: 140px;
+  }
+}
+.searchPropertyWrapper {
+  display: flex;
+  width: 710px;
+  margin: auto;
+  margin-top: 50px;
+  .cityBox {
+    flex: auto;
+    position: relative;
+    &::before {
+      content: $icon-map;
+      font-family: "#{$icomoon-font-family}" !important;
+      @include position(absolute, $top: 13px, $left: 0px);
+      font-size: 20px;
+      color: $primary;
+    }
+    &::after {
+      content: $icon-chevron-down;
+      font-family: "#{$icomoon-font-family}" !important;
+      @include position(absolute, $top: 24px, $right: 25px);
+      font-size: 10px;
+      color: #adb0c9;
+    }
+    select {
+      height: 56px;
+      border: none;
+      border-radius: 0 4px 4px 0;
+      font-weight: 500;
+      color: #161616;
+      appearance: none;
+      padding-left: 40px;
+      option {
+        padding: 15px 0;
+        font-size: 12px;
+        line-height: 2;
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+
+// ToDO needs to move in seperate file
+.headingComponent {
+  strong {
+    font-size: $font-size-md;
+  }
+}

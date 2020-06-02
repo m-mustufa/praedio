@@ -1,0 +1,37 @@
+<section class="propertySearchWrapper">
+    <div class="backgroundImg"></div>
+    <div class="searchWrapper">
+        <div class="container h-100">
+            <div class="row h-100 text-center">
+                <div class="col-md-9 mx-auto px-0 self-align-center">
+                    <h1 class="text-white">Identify Opportunities Using The Praedio Model</h1>
+                    <div class="mx-auto autoCompleteWrapper">
+                        <div class="searchPropertyWrapper">
+                            <div class="autoCompleteBox">
+                                <!-- TODO, Needs to change this approach to make it more reusable -->
+                                <app-autocomplete></app-autocomplete>
+                            </div>
+                            <div class="cityBox">
+                                <!-- TODO, Needs tp change this default select behaviour -->
+                                <select class="form-control" name="" id="">
+                                    <option *ngFor="let city of citiesList" value={{city.item}}>
+                                        {{city.item}}
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="mainContent">
+    <div class="container">
+        <div class="headingComponent text-center">
+            <strong>A currated list of</strong>
+            <h2 class="mt-2">Top 8 Opportunities in Toronto</h2>
+        </div>
+        <app-property-listing></app-property-listing>
+    </div>
+</div>

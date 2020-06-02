@@ -1,0 +1,25 @@
+$prefixes: "webkit", "moz", "ms", "o", "none"; // Pre-fixer
+@mixin prefix($property, $arguments) {
+  @each $prefix in $prefixes {
+    @if $prefix == "none" {
+      #{$property}: $arguments;
+    } @else {
+      -#{$prefix}-#{$property}: $arguments;
+    }
+  }
+}
+
+@mixin box($width, $height: $width) { // width, height
+  width: $width;
+  height: $height;
+}
+
+
+// Positioning
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}

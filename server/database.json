@@ -1,0 +1,38 @@
+{
+    "menuItem": [
+        {
+            "id": 1,
+            "item": "Explore"
+        },
+        {
+            "id": 2,
+            "item": "Calculator"
+        },
+        {
+            "id": 3,
+            "item": "Insights"
+        }
+    ],
+    "citiesList": [
+        {
+            "id": 1,
+            "item": "Toronto, ON"
+        },
+        {
+            "id": 2,
+            "item": "London, ON"
+        },
+        {
+            "id": 3,
+            "item": "Vancouver, BC"
+        },
+        {
+            "id": 4,
+            "item": "Sudbury, ON"
+        },
+        {
+            "id": 5,
+            "item": "Hamilton, ON"
+        }
+    ]
+}

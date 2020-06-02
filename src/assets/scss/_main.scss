@@ -1,0 +1,21 @@
+@import "utilities/variable";
+@import "utilities/functions";
+@import "utilities/mixin";
+
+// Pixel to REM convertion functions
+@import "utilities/typography";
+@import "utilities/rem";
+@import "utilities/fonts";
+@import "utilities/icons";
+
+// Importing Boostrap 4
+@import "~bootstrap/scss/bootstrap";
+
+//Layouting
+@import "layout/home";
+@import "layout/primaryNavigation";
+@import "layout/pageContent";
+@import "utilities/customResponsive";
+
+// Components
+@import "components/autocomplete";

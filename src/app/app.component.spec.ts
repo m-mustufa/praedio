@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Praedio'`, () => {
+  it(`should have as title 'AutoLeap'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Praedio');
+    expect(app.title).toEqual('AutoLeap');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('Praedio app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('AutoLeap app is running!');
   });
 });

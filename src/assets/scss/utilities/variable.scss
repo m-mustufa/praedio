@@ -1,0 +1,57 @@
+$asset-base-path: "assets" !default;
+
+// font families
+$fontRegular: "Inter", sans-serif;
+$fontMedium: "Inter", sans-serif;
+$fontSemiBold: "Inter", sans-serif;
+$fontBold: "Inter", sans-serif;
+$font-family-base: $fontRegular;
+$font-size-base: 0.875rem; // 14px
+$h1-font-size: ($font-size-base * 4.6);
+$h2-font-size: ($font-size-base * 3.1); // 44px
+$font-size-lg: ($font-size-base * 0.125);
+$font-size-md: ($font-size-base * 1.21); //17px
+$font-size-sm: ($font-size-base * 0.875);
+$headings-font-weight: 700;
+
+// $font-size-lg: ($font-size-base * 1.15);
+// $btn-border-radius: 25px;
+
+// $navbar-nav-link-padding-x: 1.3rem;
+
+// Container width
+$container-max-widths: (
+  xl: 1370px,
+);
+
+// Miscellaneous
+$input-border-radius: 4px;
+$btn-border-radius: 4px;
+$card-border-radius: 4px;
+
+// Colors
+$primary: #51a0ec;
+$body-color: #161616;
+$main-content-bg: #f2f3f3;
+$gray-100: #dadbdb;
+$gray-200: #bdc2c2;
+$gray-400: #6f838b;
+$border-color: #d7dada;
+$headings-color: #161616;
+
+// Custom media queries sizes
+$afterTabletPotrait: 1200px;
+$beforeTabletLandscape: 962px;
+$minimumMobileLandscape: 567px;
+// Relatable
+$commonProperty: 60px;
+
+// Icon Moon Variables
+$icomoon-font-family: "icomoon" !default;
+
+$icon-arrow-down: "\e900";
+$icon-chevron-down: "\e901";
+$icon-house: "\e902";
+$icon-map: "\e903";
+$icon-search: "\e904";
+$icon-error: "\e905";
